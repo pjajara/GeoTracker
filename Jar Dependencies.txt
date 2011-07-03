@@ -1,0 +1,6 @@
+List of jars to be included in the Geo_Tracker Project
+
+jboss-persistence-client.jar
+xml-resolver.jar
+junit-4.8.2.jar
+jbossall-client.jar

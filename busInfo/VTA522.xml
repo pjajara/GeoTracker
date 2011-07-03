@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<Bus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+	<Stop id = "001">
+	<Route-id>522-2</Route-id>
+		<Stop-name>Santa Teresa Hosiptal</Stop-name>
+		<Location> 
+		<Longitude>-121.8935758476544</Longitude>
+		<Latitude>37.34043714298944</Latitude>
+		</Location>
+		<DriverId>DRV013</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>19</PCount>
+		<TimeStamp><![CDATA[2011-03-01T11:24:01]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "002">
+	<Route-id>522-2</Route-id>
+		<Stop-name>Snell Light Rail Station</Stop-name>
+		<Location> 
+		<Longitude>-121.8923535098271</Longitude>
+		<Latitude>37.33869239641732</Latitude>
+		</Location>
+		<DriverId>DRV013</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>14</PCount>
+		<TimeStamp><![CDATA[2011-03-01T11:28:14]]></TimeStamp>				
+	</Stop>
+	
+	<Stop id = "003">
+	<Route-id>522-2</Route-id>
+		<Stop-name>Monterey and Senter</Stop-name>
+		<Location> 
+		<Longitude>-121.8908805369861</Longitude>
+		<Latitude>37.33672061965707</Latitude>
+		</Location>
+		<DriverId>DRV013</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>11</PCount>
+		<TimeStamp><![CDATA[2011-03-01T11:34:32]]></TimeStamp>					
+	</Stop>
+	
+	<Stop id = "004">
+	<Route-id>522-1</Route-id>
+		<Stop-name>Monterey and Curtner</Stop-name>
+		<Location> 
+		<Longitude>-121.8896238086367</Longitude>
+		<Latitude>37.33509246637599</Latitude>
+		</Location>
+		<DriverId>DRV012</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>23</PCount>
+		<TimeStamp><![CDATA[2011-03-03T18:38:19]]></TimeStamp>						
+	</Stop>
+	
+	<Stop id = "005">
+	<Route-id>522-2</Route-id>
+		<Stop-name>1st and Keyes</Stop-name>
+		<Location> 
+		<Longitude>-121.8882035992986</Longitude>
+		<Latitude>37.33327011370832</Latitude>
+		</Location>
+		<DriverId>DRV013</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>15</PCount>
+		<TimeStamp><![CDATA[2011-03-01T11:45:46]]></TimeStamp>							
+	</Stop>
+	
+	<Stop id = "006">
+	<Route-id>522-1</Route-id>
+		<Stop-name>1st and Reed</Stop-name>
+		<Location> 
+		<Longitude>-121.8870406743363</Longitude>
+		<Latitude>37.33155308288256</Latitude>
+		</Location>
+		<DriverId>DRV012</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>25</PCount>
+		<TimeStamp><![CDATA[2011-03-03T18:48:59]]></TimeStamp>						
+	</Stop>
+	
+	<Stop id = "007">
+	<Route-id>522-3</Route-id>
+		<Stop-name>1st and Santa Clara</Stop-name>
+		<Location> 
+		<Longitude>-121.8856419312153</Longitude>
+		<Latitude>37.32969864902978</Latitude>
+		</Location>
+		<DriverId>DRV014</DriverId>
+		<OperationalCode>police alert</OperationalCode>
+		<Status>stop</Status>
+		<PCount>24</PCount>
+		<TimeStamp><![CDATA[2011-03-05T16:54:03]]></TimeStamp>							
+	</Stop>
+	
+	<Stop id = "008">
+	<Route-id>522-2</Route-id>
+		<Stop-name>Civic Center Light Rail Station</Stop-name>
+		<Location> 
+		<Longitude>-121.8841018425051</Longitude>
+		<Latitude>37.32764648888967</Latitude>
+		</Location>
+		<DriverId>DRV013</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>8</PCount>
+		<TimeStamp><![CDATA[2011-03-01T11:59:13]]></TimeStamp>								
+	</Stop>
+	
+	<Stop id = "009">
+	<Route-id>522-1</Route-id>
+		<Stop-name>Great Mall Transit Center</Stop-name>
+		<Location> 
+		<Longitude>-121.8827040712865</Longitude>
+		<Latitude>37.32642080630929</Latitude>
+		</Location>
+		<DriverId>DRV012</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>19</PCount>
+		<TimeStamp><![CDATA[2011-03-03T18:02:02]]></TimeStamp>							
+	</Stop>
+	
+	</Bus>

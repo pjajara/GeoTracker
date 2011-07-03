@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<Bus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <Stop id = "001">
+	<Route-id>68-3</Route-id>
+		<Stop-name>Santa Teresa Hosiptal</Stop-name>
+		<Location> 
+		<Longitude>-121.876695321672</Longitude>
+		<Latitude>37.31931177566452</Latitude>
+		</Location>
+		<DriverId>DRV023</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>13</PCount>
+		<TimeStamp><![CDATA[2011-02-27T18:04:16]]></TimeStamp>
+		
+	</Stop>
+	
+		<Stop id = "002">
+		<Route-id>68-1</Route-id>
+		<Stop-name>Snell Light Rail Station</Stop-name>
+		<Location> 
+		<Longitude>-121.870990837664</Longitude>
+		<Latitude>37.31334710355458</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>4</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:13:14]]></TimeStamp>	
+	</Stop>
+	
+	<Stop id = "003">
+	<Route-id>68-1</Route-id>
+		<Stop-name>Monterey and Senter</Stop-name>
+		<Location> 
+		<Longitude>-121.8649881311923</Longitude>
+		<Latitude>37.30750231338064</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>6</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:15:01]]></TimeStamp>	
+	</Stop>
+	
+	<Stop id = "004">
+	<Route-id>68-2</Route-id>
+		<Stop-name>Monterey and Curtner</Stop-name>
+		<Location> 
+		<Longitude>-121.8589867383659</Longitude>
+		<Latitude>37.30177724584365</Latitude>
+		</Location>
+		<DriverId>DRV022</DriverId>
+		<OperationalCode>police alert</OperationalCode>
+		<Status>in route</Status>
+		<PCount>4</PCount>
+		<TimeStamp><![CDATA[2011-03-02T22:23:01]]></TimeStamp>		
+	</Stop>
+	
+	<Stop id = "005">
+	<Route-id>68-1</Route-id>
+		<Stop-name>1st and Keyes</Stop-name>
+		<Location> 
+		<Longitude>-121.8526894839229</Longitude>
+		<Latitude>37.29522152031797</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>5</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:23:19]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "006">
+	<Route-id>68-1</Route-id>
+		<Stop-name>1st and Reed</Stop-name>
+		<Location> 
+		<Longitude>-121.8466984696656</Longitude>
+		<Latitude>37.28879324816531</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>9</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:33:24]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "007">
+	<Route-id>68-3</Route-id>
+		<Stop-name>1st and Santa Clara</Stop-name>
+		<Location> 
+		<Longitude>-121.8398170919565</Longitude>
+		<Latitude>37.28248038703217</Latitude>
+		</Location>
+		<DriverId>DRV023</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>22</PCount>
+		<TimeStamp><![CDATA[2011-02-27T18:36:26]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "008">
+	<Route-id>68-1</Route-id>
+		<Stop-name>Civic Center Light Rail Station</Stop-name>
+		<Location> 
+		<Longitude>-121.8323372064397</Longitude>
+		<Latitude>37.27593312974135</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>15</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:39:01]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "009">
+	<Route-id>68-1</Route-id>
+		<Stop-name>Oakland and Brokaw</Stop-name>
+		<Location> 
+		<Longitude>-121.8250331637462</Longitude>
+		<Latitude>37.27012596720972</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>12</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:41:09]]></TimeStamp>				
+	</Stop>
+	
+	<Stop id = "010">
+	<Route-id>68-1</Route-id>
+		<Stop-name>Great Mall Transit Center</Stop-name>
+		<Location> 
+		<Longitude>-121.8176894552342</Longitude>
+		<Latitude>37.26427403671113</Latitude>
+		</Location>
+		<DriverId>DRV021</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>15</PCount>
+		<TimeStamp><![CDATA[2011-03-07T06:47:18]]></TimeStamp>				
+	</Stop>
+	
+	<Stop id = "011">
+	<Route-id>68-3</Route-id>
+		<Stop-name>Dixon and Milpitas Blvd</Stop-name>
+		<Location> 
+		<Longitude>-121.8103667888635</Longitude>
+		<Latitude>37.2603474158579</Latitude>
+		</Location>
+		<DriverId>DRV023</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>11</PCount>
+		<TimeStamp><![CDATA[2011-02-27T18:49:44]]></TimeStamp>					
+	</Stop>
+	
+	</Bus>

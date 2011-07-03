@@ -1,0 +1,152 @@
+<project name="Geo_Tracker" default="jar" basedir=".">
+	<target name="init">
+		<property environment="env"/>
+		<property name="src.dir" value="${basedir}/src"/>
+		<property name="test.dir" value="${basedir}/test"/>
+		<property name="classes.dir" value="${basedir}/classes" />
+		<property name="out.dir" value="${basedir}/build" />
+		<property name="jboss.home" value="${env.JBOSS_HOME}" />
+		<property name="junit.home" value="C:\junit" />
+		<property name="jboss.deploy" value="${jboss.home}/server/default/deploy" />
+		<property name="test.class.name" value="com.vta.gtrack.testing.VtaTestCase" />
+	</target>
+	
+	<target name="build" depends="init">
+		<mkdir dir="${classes.dir}"/>
+		<mkdir dir="${out.dir}"/>
+		<javac srcdir="${src.dir}" debug="true" destdir="${classes.dir}" >
+			<classpath>
+				<fileset dir="${jboss.home}/client">
+					<include name="**/*.jar"/>
+				</fileset>
+				<pathelement location="${classes.dir}"/>
+			</classpath>
+		</javac>
+		
+		<javac srcdir="${test.dir}" debug="true" destdir="${classes.dir}" >
+					<classpath>
+						<fileset dir="${junit.home}">
+							<include name="**/*.jar"/>
+						</fileset>
+						<pathelement location="${classes.dir}"/>
+					</classpath>
+		</javac>
+	</target>
+		
+	<target name="clean" depends="init">
+		<delete dir="${classes.dir}" quiet="true" />
+		<delete dir="${out.dir}" quiet="true" />
+	</target>
+	
+	<target name="help">
+			<echo>
+				Loading information and testcases:
+				1) loadroute: To load route information
+				2) loaddata: To send vta information 
+				3) loadtest: To run test cases
+				4) client: To find bus location
+			</echo>
+	</target>
+
+	<target name="deploy" depends="clean,jar">
+		<copy file="${out.dir}/Geo-svr.jar" toDir="${jboss.deploy}" />
+	</target>
+
+	<target name="jar" depends="build">
+		<mkdir dir="${out.dir}/ejb-jar/META-INF" />
+		<mkdir dir="${out.dir}/ejb-jar/lib" />
+
+		<copy file="${basedir}/conf/persistence.xml" toDir="${out.dir}/ejb-jar/META-INF" />
+		
+		<copy toDir="${out.dir}/ejb-jar">
+		<fileset dir="${classes.dir}">
+				<include name="**/**" />
+		</fileset>
+		</copy>
+		
+		
+		<mkdir dir="${out.dir}" />
+		<jar destfile="${out.dir}/Geo-svr.jar">
+			<fileset dir="${out.dir}/ejb-jar">
+					<include name="**/*" />
+			</fileset>
+		</jar>
+		
+		<jar destfile="${out.dir}/Geo-clt.jar">
+			<fileset dir="${classes.dir}">				
+				<include name="**com/vta/gtrack/ejbclient/GeoClient.class" />
+				<include name="**com/vta/gtrack/data/*" />
+				<include name="**com/vta/gtrack/ejb/GeoEJB.class*" />
+				<include name="**com/vta/gtrack/ejb/GeoRemote.class*" />
+			</fileset>
+		</jar>
+		
+		
+		<jar destfile="${out.dir}/Geoloadroute.jar">
+			<fileset dir="${classes.dir}">
+				
+				<include name="**com/vta/gtrack/ejbclient/LoadRouteInfo.class" />
+				<include name="**com/vta/gtrack/data/*" />
+				<include name="**com/vta/gtrack/exceptions/*" />
+				<include name="**com/vta/gtrack/ejb/GeoEJB.class*" />
+				<include name="**com/vta/gtrack/ejb/GeoRemote.class*" />
+			</fileset>
+		</jar>
+		
+		
+		<jar destfile="${out.dir}/Vta-clt.jar">
+				<fileset dir="${classes.dir}">
+				<include name="com/vta/gtrack/producer/DataProducer.class" />
+				<include name="com/vta/gtrack/data/*.class" />
+				</fileset>
+		
+		</jar>
+	</target>
+
+	<target name="client" depends="init">
+		<java classname="com.vta.gtrack.ejbclient.GeoClient">
+			<classpath>
+				<pathelement location="${jboss.home}/client/commons-logging.jar" />
+				<pathelement location="${jboss.home}/client/jbossall-client.jar" />
+				<pathelement location="${jboss.home}/client/ejb3-persistence.jar" />
+				<pathelement location="${out.dir}/Geo-clt.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="loaddata" depends="init">
+		<java classname="com.vta.gtrack.ejbclient.LoadRouteInfo">
+			<classpath>
+				<pathelement location="${jboss.home}/client/commons-logging.jar" />
+				<pathelement location="${jboss.home}/client/jbossall-client.jar" />
+				<pathelement location="${jboss.home}/client/ejb3-persistence.jar" />
+				<pathelement location="${out.dir}/Geoloadroute.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	
+	<target name="loadroute" depends="init">
+		<java classname="com.vta.gtrack.producer.DataProducer">
+			<classpath>
+				<pathelement location="${jboss.home}/client/commons-logging.jar" />
+				<pathelement location="${jboss.home}/client/jbossall-client.jar" />
+				<pathelement location="${out.dir}/Vta-clt.jar" />
+			</classpath>			
+		</java>
+	</target>
+	
+	<target name="loadtest" depends="init" >
+		<junit fork="yes" haltonfailure="yes" >
+			<classpath>
+			<pathelement location="${classes.dir}" />
+			<pathelement location="${junit.home}/junit-4.8.2.jar"  />
+			</classpath>
+			
+			<test name="com.vta.gtrack.testing.VtaTestCase"/>
+			<test name ="com.vta.gtrack.testing.VtaXmlTestCases"/>
+		   <formatter type="plain" usefile="true"  />
+		   <formatter type="plain" usefile="false"   />	       
+	   </junit>
+	</target>
+</project>

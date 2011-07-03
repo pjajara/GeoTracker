@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<Bus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <Stop id = "001">
+	<Route-id>23-1</Route-id>
+		<Stop-name>Palo Alto Transit Center</Stop-name>
+		<Location> 
+		<Longitude>-122.1672961215311</Longitude>
+		<Latitude>37.44347160506887</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>in route</Status>
+		<PCount>13</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:01:25]]></TimeStamp>
+	</Stop>
+	
+	<Stop id = "002">
+	<Route-id>23-2</Route-id>
+		<Stop-name>El Camino Real and California</Stop-name>
+		<Location> 
+		<Longitude>-122.1652011448073</Longitude>
+		<Latitude>37.44181449336502</Latitude>
+		</Location>
+		<DriverId>DRV002</DriverId>
+		<OperationalCode>police alert</OperationalCode>
+		<Status>in route</Status>
+		<PCount>26</PCount>
+		<TimeStamp><![CDATA[2011-03-07T11:45:34]]></TimeStamp>
+	</Stop>
+	
+	<Stop id = "003">
+	<Route-id>23-1</Route-id>
+		<Stop-name>El Camino Real and Showers</Stop-name>
+		<Location> 
+		<Longitude>-122.1633526941012</Longitude>
+		<Latitude>37.44022392178943</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>6</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:14:38]]></TimeStamp>
+	</Stop>
+	
+	<Stop id = "004">
+	<Route-id>23-1</Route-id>
+		<Stop-name>El Camino Real and Castro</Stop-name>
+		<Location> 
+		<Longitude>-122.1615005725873</Longitude>
+		<Latitude>37.43866251149775</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>16</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:24:18]]></TimeStamp>				
+	</Stop>
+	
+	<Stop id = "005">
+	<Route-id>23-3</Route-id>
+		<Stop-name>El Camino Real and Hollenbeck</Stop-name>
+		<Location> 
+		<Longitude>-122.1596467747662</Longitude>
+		<Latitude>37.43709980742644</Latitude>
+		</Location>
+		<DriverId>DRV003</DriverId>
+		<OperationalCode>medical alert</OperationalCode>
+		<Status>in route</Status>
+		<PCount>18</PCount>
+		<TimeStamp><![CDATA[2011-03-12T07:42:11]]></TimeStamp>							
+	</Stop>
+	
+	<Stop id = "006">
+	<Route-id>23-4</Route-id>
+		<Stop-name>El Camino Real and Wolfe</Stop-name>
+		<Location> 
+		<Longitude>-122.1577912555808</Longitude>
+		<Latitude>37.43531257790875</Latitude>
+		</Location>
+		<DriverId>DRV004</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>6</PCount>
+		<TimeStamp><![CDATA[2011-03-09T05:39:02]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "007">
+	<Route-id>23-1</Route-id>
+		<Stop-name>El Camino Real and Kiely</Stop-name>
+		<Location> 
+		<Longitude>-122.1558558245069</Longitude>
+		<Latitude>37.4338127934091</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>12</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:41:02]]></TimeStamp>			
+	</Stop>
+	
+	<Stop id = "008">
+	<Route-id>23-1</Route-id>
+		<Stop-name>Santa Clara Transit Center</Stop-name>
+		<Location> 
+		<Longitude>-122.1539594062411</Longitude>
+		<Latitude>37.43202440743114</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>15</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:43:12]]></TimeStamp>					
+	</Stop>
+	
+	<Stop id = "009">
+	<Route-id>23-5</Route-id>
+		<Stop-name>The Alameda and Naglee</Stop-name>
+		<Location> 
+		<Longitude>-122.1520221658131</Longitude>
+		<Latitude>37.4302993680457</Latitude>
+		</Location>
+		<DriverId>DRV005</DriverId>
+		<OperationalCode>medical alert</OperationalCode>
+		<Status>in route</Status>
+		<PCount>5</PCount>
+		<TimeStamp><![CDATA[2011-03-10T10:18:17]]></TimeStamp>							
+	</Stop>
+	
+	<Stop id = "010">
+	<Route-id>23-4</Route-id>
+		<Stop-name>Santa Clara and 1st</Stop-name>
+		<Location> 
+		<Longitude>-122.1501246146698</Longitude>
+		<Latitude>37.42882889314259</Latitude>
+		</Location>
+		<DriverId>DRV004</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>20</PCount>
+		<TimeStamp><![CDATA[2011-03-09T05:51:45]]></TimeStamp>							
+	</Stop>
+	
+	<Stop id = "011">
+	<Route-id>23-4</Route-id>
+		<Stop-name>King and Alum Rock</Stop-name>
+		<Location> 
+		<Longitude>-122.1481840527642</Longitude>
+		<Latitude>37.42674908388345</Latitude>
+		</Location>
+		<DriverId>DRV004</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>19</PCount>
+		<TimeStamp><![CDATA[2011-03-09T05:55:49]]></TimeStamp>									
+	</Stop>
+	
+	<Stop id = "012">
+	<Route-id>23-1</Route-id>
+		<Stop-name>Eastridge Transit Center</Stop-name>
+		<Location> 
+		<Longitude>-122.1459618487582</Longitude>
+		<Latitude>37.4251492168731</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>in service</OperationalCode>
+		<Status>stop</Status>
+		<PCount>19</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:58:10]]></TimeStamp>				
+	</Stop>
+	
+    <!-- <Stop id = "013">
+	<Route-id>23-1</Route-id>
+		<Stop-name>Eastridge Transit Center</Stop-name>
+		<Location> 
+		<Longitude>-122.810781</Longitude>
+		<Latitude>37.327771</Latitude>
+		</Location>
+		<DriverId>DRV001</DriverId>
+		<OperationalCode>medical alert</OperationalCode>
+		<Status>in route</Status>
+		<PCount>9</PCount>
+		<TimeStamp><![CDATA[2011-03-03T08:59:33]]></TimeStamp>					
+	</Stop> -->
+</Bus>
